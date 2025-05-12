@@ -1,0 +1,291 @@
+/* Core styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Header section */
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    position: relative;
+    height: 100%;
+    background-color: rgb(241, 239, 239);
+}
+
+.main-header {
+    box-shadow: 0px 11px 8px -13px;
+    padding: 10px 20px;
+    height: 90px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+
+.it-tat-logo img{
+    width: 8rem;
+}
+
+.main-header-icons select {
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    border-radius: 2rem;
+}
+
+.main-header-icons i {
+    font-size: 1.4rem;
+    padding-left: 3rem;
+    color: black;
+}
+
+.profile-name-pic {
+    padding-left: 3rem;
+}
+
+.profile-name-pic a{
+    text-decoration: none;
+    color: black;
+}
+
+.profile-name-pic h4 {
+    padding-right: 2rem;
+    font-weight: 300;
+}
+
+.profile-name-pic img {
+    width: 2rem;
+}
+
+/* End header section */
+
+/* Side-bar */
+
+.nav-bar {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 200px;
+    bottom: 0;
+    /* height: calc(100vh - 60px); */
+    background-color: white;
+    box-shadow: 5px 0px 5px -5px;
+    overflow: auto;
+}
+
+.nav-bar ul {
+    padding: 30px 10px;
+    list-style: none;
+}
+
+.nav-bar ul li {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    display: block;
+}
+
+.nav-bar a {
+    height: 60px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar a:hover {
+    border-left: 2px solid blue;
+    border-radius: 5px;
+    background-color: aliceblue;
+    color: rgb(140, 140, 238);
+}
+
+.nav-bar a i {
+    padding-bottom: 10px;
+    display: block;
+    font-size: 30px;
+}
+
+/* End side-bar */
+
+.main {
+    position: absolute;
+    top: 110px;
+    left: 220px;
+    
+}
+
+.main h1 {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+
+.kurs {
+    font-size: 14px;
+    line-height: 20px;
+    width: 400px;
+    padding: 20px 30px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 0px;
+}
+
+.tat {
+    color: rgb(171, 170, 170);
+}
+
+.tat button {
+    font-size: 10px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    padding: 5px;
+}
+
+.list {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    margin-top: 40px;
+    outline: 1px solid rgb(171, 170, 170);
+}
+
+.main-sub-section {
+    margin-top: 30px;
+}
+
+.main table {
+    width: 100%;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.main table th, td {
+    padding: 5px;
+}
+
+.main table i {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    color: #0097ce;
+    cursor: pointer;
+}
+
+.davomat {
+    margin-right: 10px;
+}
+
+.davomat-heading {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.davomat-heading button {
+    font-weight: 300;
+    height: 45px;
+    /* margin-right: 30px; */
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.davomat-heading button:hover {
+    border-top: 2px solid #0097ce;
+    background-color: white;
+    color: #0097ce;
+    cursor: pointer;
+}
+
+.davomat-rest {
+    margin-left: 10px;
+    background-color: white;
+    padding: 20px 10px;
+}
+
+.davomat-button {
+    gap: 150px;
+}
+
+.davomat-rest h2 {
+    font-weight: 300;
+}
+
+.davomat-nav button {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background-color: #7ebcd1;
+    color: white;
+    margin-right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.davomat-nav span {
+    margin-right: 10px;
+}
+
+.davomat-rest-table {
+    width: 600px;
+    overflow-x: auto;
+}
+
+.davomat-rest-table img {
+    width: 20px;
+}
+
+.davomat-rest-table th {
+    font-size: 10px;
+    font-weight: 200;
+}
+
+.flex-star {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.davomat-rest-table  table tbody td {
+    text-align: center;
+}
